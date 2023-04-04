@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TrainingComponent } from './training/training.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatInputModule } from '@angular/material/input'
+import {MatFormFieldModule } from '@angular/material/form-field'
+import {MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -17,7 +25,15 @@ import { TrainingComponent } from './training/training.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
