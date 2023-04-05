@@ -1,36 +1,42 @@
-<div mat-dialog-title>
+<div mat-dialog-title class="text-center">
     <h1>Profile form</h1>
 </div>
-<div mat-dialog-content class="w-72">
-    <div class="row">
+<div mat-dialog-content class="pt-3">
+    <div class="flex gap-2">
         <mat-form-field appearance="outline">
-            <mat-label>Input</mat-label>
+            <mat-label>Firstname</mat-label>
             <input matInput type="text" placeholder="Ex. Technical">
         </mat-form-field>
     </div>
-    <div class="row">
+    <div class="flex gap-2">
 
         <mat-form-field appearance="outline">
-            <mat-label>Input</mat-label>
+            <mat-label>Lastname</mat-label>
             <input matInput>
 
         </mat-form-field>
     </div>
-    <div class="row">
+    <div class="flex gap-2">
 
         <mat-form-field appearance="outline">
-            <mat-label>Input</mat-label>
+            <mat-label>Weight</mat-label>
             <input matInput>
         </mat-form-field>
     </div>
-    <div class="row">
+    <div class="flex gap-2">
         <mat-form-field appearance="outline">
-            <mat-label>Input</mat-label>
+            <mat-label>Height</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="flex gap-2">
+        <mat-form-field appearance="outline">
+            <mat-label>Training goal</mat-label>
             <input matInput>
         </mat-form-field>
     </div>
 </div>
 <div mat-dialog-actions class="action">
-    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button type="button" class="flex-1" [mat-dialog-close]="false">Cancel</button>
     <button mat-raised-button color="primary">Save</button>
 </div>

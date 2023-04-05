@@ -13,14 +13,19 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatInputModule } from '@angular/material/input'
 import {MatFormFieldModule } from '@angular/material/form-field'
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { ProfileListComponent } from './profile-list/profile-list.component'
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserFormComponent,
     ProfileComponent,
-    TrainingComponent
+    TrainingComponent,
+    ProfileListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,10 @@ import {MatButtonModule} from '@angular/material/button'
     MatDialogModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
